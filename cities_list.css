@@ -1,0 +1,63 @@
+input[type='radio'] {
+  display: none;
+}
+
+#thumb-list {
+  text-align: center;
+  
+  label img {
+    height: 100px;
+    opacity: .5;
+    transition: .5s ease;
+    
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+}
+
+#viewer {
+  position: relative;
+  
+  img {
+    height: 80vh;
+    margin: auto;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s ease;
+    transform: scale(.1);
+    left: 0;
+  }
+}
+
+@mixin label-list($count) {
+  $selector : '';
+  @for $i from 1 through $count {
+    $selector : $selector + '#input-image-' + $i + ':checked ~ #thumb-list label[for="input-image-' + $i + '"] img, ';
+  }
+  #{$selector} {
+    @content;
+  }
+}
+
+@mixin viewer-list($count) {
+  $selector : '';
+  @for $i from 1 through $count {
+    $selector : $selector + '#input-image-' + $i + ':checked ~ #viewer #image-' + $i + ', ';
+  }
+  #{$selector} {
+    @content;
+  }
+}
+
+@include label-list(9) {
+  opacity: 1;
+}
+
+@include viewer-list(9) {
+  opacity: 1;
+  transform: scale(1);
+}
