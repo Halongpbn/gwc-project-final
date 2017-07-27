@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Artistreet-Baltimore</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+  #map{width:100%;height400px}
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+  </head>
+<body>
 
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">BALTIMORE, MD</a>
+  </header>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="http://darkroom.baltimoresun.com/wp-content/uploads/2013/01/BS-darkroom-p2-murals-perna.jpg" style="width:100%">
+      <img src="http://i2.cdn.cnn.com/cnnnext/dam/assets/170226181050-mural-trayvon-martin-full-169.jpg" style="width:100%">
+      <img src="http://68.media.tumblr.com/tumblr_lock4npug01qza0i3o1_1280.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/df/e8/e3/dfe8e30b382809c41f013ee4010be406.jpg" style="width:100%">
+      <img src="http://www.aljazeera.com/mritems/Images/2015/6/17/be030b4a51a34d5ea37b877ffb843017_18.jpg" style="width:100%">
+      <img src="http://static.wixstatic.com/media/9398f9_cf17951afaad49f9addbe53370855adb.jpg_srz_1113_635_85_22_0.50_1.20_0.00_jpg_srz" style="width:100%">
+    </div>
+  </div>
+  <div id="map"></div>
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoPM0R5N4odvCFInawvXoTX3W9wQynw64&callback=initMap">
+    </script>
+  
+<!-- End Page Content -->
+</div>
+ 
+</body>
+</html>
