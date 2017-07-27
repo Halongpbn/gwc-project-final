@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Artistreet-Philadelphia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+  </head>
+<body>
 
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">NEW YORK CITY, NY</a>
+  </header>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="http://2.bp.blogspot.com/-NuZ-Vba1jBU/UbCNv4E5CII/AAAAAAAAbUc/_7TwRJXwjlc/s1600/DSC_0012.JPG"width:100%">
+      <img src="http://streetartnyc.org/wp-content/uploads/2012/11/Joel-Bergner-street-art-in-Bushwick-New-York-City.jpg" style="width:100%">
+      <img src="http://graffiti.fatcap.com/142/opct_77a54174f2e4e1a81a215666440496f946af0fdc.jpg"width:100%">
+      <img src="https://c1.staticflickr.com/4/3767/19570258568_f487687546_b.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="http://streetartnyc.org/wp-content/uploads/2017/06/sunny-sundancer-mural-art-LES-NYC.jpg"width:100%">
+      <img src="http://sanatkaravani.com/wp-content/uploads/2016/06/new-york-2.jpg" style="width:100%">
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/54/b3/ab/54b3ab183b5c329130dc6a1225931795--heart-graffiti-graffiti-art.jpg" style="width:100%">
+    </div>
+  </div>
+  <script src="search.js">
+      <div id="map"></div>
+    </script>
+    <script src="search.js"></script>
+      <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAltsNZzO-592KU4Uj-3Wi-Pzu-u7EmbLY&callback=initMap">
+  
+<!-- End Page Content -->
+</div>
+ 
+</body>
+</html>
