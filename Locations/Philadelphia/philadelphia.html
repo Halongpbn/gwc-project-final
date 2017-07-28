@@ -26,7 +26,8 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-      <img src="http://hearthesewalls.acfphiladelphia.org/resources/peacebanner.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="http://hearthesewalls.acfphiladelphia.org/resources/peacebanner.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Peace is a Haiku Song Mural<br>
+Artists: Josh Sarantitis and Parris Stancell">
       <img src="https://www.muralarts.org/wp-content/uploads/2016/05/2013-005-Muses-Restoration.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
       <img src="https://www.picsofcelebrities.com/celebrity/ernest-van-pelt/pictures/large/ernest-van-pelt-tattoos.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
       <img src="https://www.muralarts.org/wp-content/uploads/2016/02/MAP-lincoln-financial-mural-MASTER.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
@@ -51,13 +52,18 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var crane_pic = {lat: 39.9399, lng: -75.1672};
+        var muse_pic = {lat: 39.947947, lng: -75.162361};
+
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
-          center: uluru
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: crane_pic,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: muse_pic,
           map: map
         });
       }
