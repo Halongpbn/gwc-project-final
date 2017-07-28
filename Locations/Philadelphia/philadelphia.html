@@ -29,14 +29,14 @@ body {font-family: "Raleway", Arial, sans-serif}
       <img src="http://hearthesewalls.acfphiladelphia.org/resources/peacebanner.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Peace is a Haiku Song Mural<br>
 Artists: Josh Sarantitis and Parris Stancell">
       <img src="https://www.muralarts.org/wp-content/uploads/2016/05/2013-005-Muses-Restoration.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Philadelphia Muses <br>Artist: Meg Saligman">
-      <img src="https://www.picsofcelebrities.com/celebrity/ernest-van-pelt/pictures/large/ernest-van-pelt-tattoos.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://www.picsofcelebrities.com/celebrity/ernest-van-pelt/pictures/large/ernest-van-pelt-tattoos.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Pride and Progress<br>Artist: Ann Northrup">
       <img src="https://www.muralarts.org/wp-content/uploads/2016/02/MAP-lincoln-financial-mural-MASTER.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Lincoln Legacy <br>Artists: Josh Sarantitis and Eric Okdeh">
     </div>
 
     <div class="w3-half">
       <img src="bird.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="https://vutimes.files.wordpress.com/2012/11/img_1605.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="http://picturephilly.com/wp-content/uploads/2011/10/women-in-progress.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://vutimes.files.wordpress.com/2012/11/img_1605.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Finding Home <br>Artists: Josh Sarantitis and Katherine Penneckaker">
+      <img src="http://picturephilly.com/wp-content/uploads/2011/10/women-in-progress.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Women of Progress <br>Artists: Cesar Viveros and Larissa Preston">
     </div>
   </div>
   <!--modal-->
@@ -55,6 +55,9 @@ Artists: Josh Sarantitis and Parris Stancell">
         var crane_pic = {lat: 39.9399, lng: -75.1672};
         var muse_pic = {lat: 39.947947, lng: -75.162361};
         var lincoln_legacy = {lat:39.949675, lng: -75.152653};
+        var find_home = {lat:39.951443, lng: -75.161593};
+        var women_of_progress = {lat: 39.948141, lng: -75.162689};
+        var pride = {lat:39.947124, lng: -75.163365};
         var map = new google.maps.Map(document.getElementById('map'), {
           center: crane_pic,
           zoom: 15,
@@ -68,7 +71,19 @@ Artists: Josh Sarantitis and Parris Stancell">
           map: map
         });
         var marker = new google.maps.Marker({
-          position: muse_pic,
+          position: lincoln_legacy,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: find_home,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: women_of_progress,
+          map: map
+        });
+         var marker = new google.maps.Marker({
+          position: pride,
           map: map
         });
       }
