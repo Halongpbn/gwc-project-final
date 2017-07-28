@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://halongpbn.github.io/gwc-project-final/Locations/popup.css">
 <style>
   #map{width:100%;height400px}
 body {font-family: "Raleway", Arial, sans-serif}
@@ -26,18 +27,28 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-      <img src="http://streetartnyc.org/wp-content/uploads/2012/11/Joel-Bergner-street-art-in-Bushwick-New-York-City.jpg" style="width:100%">
-      <img src="https://farm8.static.flickr.com/7477/29014788630_3ba1476554_b.jpg" style="width:100%">
-      <img src="https://c1.staticflickr.com/4/3767/19570258568_f487687546_b.jpg" style="width:100%">
+      <img src="http://streetartnyc.org/wp-content/uploads/2012/11/Joel-Bergner-street-art-in-Bushwick-New-York-City.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://farm8.static.flickr.com/7477/29014788630_3ba1476554_b.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://c1.staticflickr.com/4/3767/19570258568_f487687546_b.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
     </div>
 
     <div class="w3-half">
-      <img src="http://streetartnyc.org/wp-content/uploads/2017/06/sunny-sundancer-mural-art-LES-NYC.jpg" style="width:100%">
-      <img src="http://sanatkaravani.com/wp-content/uploads/2016/06/new-york-2.jpg" style="width:100%">
-      <img src="bleeding.jpg" style="width:100%">
+      <img src="http://streetartnyc.org/wp-content/uploads/2017/06/sunny-sundancer-mural-art-LES-NYC.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="http://sanatkaravani.com/wp-content/uploads/2016/06/new-york-2.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="bleeding.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
     </div>
   </div>
+   <!--modal-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  </div>
   <div id="map"></div>
+  <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
@@ -54,9 +65,7 @@ body {font-family: "Raleway", Arial, sans-serif}
     <script async defer 
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoPM0R5N4odvCFInawvXoTX3W9wQynw64&callback=initMap">
     </script>
-  
-<!-- End Page Content -->
-</div>
+ 
  
 </body>
 </html>
