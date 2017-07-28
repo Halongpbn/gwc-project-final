@@ -27,11 +27,11 @@ body,h1,h2,h3,h4,h5 {font-family: 'Josefin Sans', sans-serif;}
 <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16" style="z-index: 1;font-size:30px">
   <span class="w3-left w3-paddin" style="padding-top:70px">Our Members</span>
   <img src="Artistreet Logo Black.png" style="height: 100px; padding-left:400px" />
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onmouseover="w3_open()" onmouseout="w3_close()">☰</a>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onmouseover="w3_open()">☰</a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-animate-opacity" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-animate-opacity" onmouseout="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
   
   <!-- Photo grid -->
  <div style="padding-top:130px">
