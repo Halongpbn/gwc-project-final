@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://halongpbn.github.io/gwc-project-final/Locations/popup.css">
 <style>
   #map{height: 400px;
         width: 100%;}
@@ -27,19 +28,29 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-      <img src="http://hearthesewalls.acfphiladelphia.org/resources/peacebanner.jpg" style="width:100%">
-      <img src="https://www.muralarts.org/wp-content/uploads/2016/05/2013-005-Muses-Restoration.jpg" style="width:100%">
-      <img src="https://www.picsofcelebrities.com/celebrity/ernest-van-pelt/pictures/large/ernest-van-pelt-tattoos.jpg" style="width:100%">
-      <img src="https://www.muralarts.org/wp-content/uploads/2016/02/MAP-lincoln-financial-mural-MASTER.jpg" style="width:100%">
+      <img src="http://hearthesewalls.acfphiladelphia.org/resources/peacebanner.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://www.muralarts.org/wp-content/uploads/2016/05/2013-005-Muses-Restoration.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://www.picsofcelebrities.com/celebrity/ernest-van-pelt/pictures/large/ernest-van-pelt-tattoos.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://www.muralarts.org/wp-content/uploads/2016/02/MAP-lincoln-financial-mural-MASTER.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
     </div>
 
     <div class="w3-half">
-      <img src="bird.jpg" style="width:100%">
-      <img src="https://vutimes.files.wordpress.com/2012/11/img_1605.jpg" style="width:100%">
-      <img src="http://picturephilly.com/wp-content/uploads/2011/10/women-in-progress.jpg" style="width:100%">
+      <img src="bird.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://vutimes.files.wordpress.com/2012/11/img_1605.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="http://picturephilly.com/wp-content/uploads/2011/10/women-in-progress.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
     </div>
   </div>
+  <!--modal-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  </div>
   <div id="map"></div>
+  <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
@@ -56,11 +67,6 @@ body {font-family: "Raleway", Arial, sans-serif}
     <script async defer 
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoPM0R5N4odvCFInawvXoTX3W9wQynw64&callback=initMap">
     </script>
-
-  
-<!-- End Page Content -->
-</div>
- 
 </body>
 </html>
 
