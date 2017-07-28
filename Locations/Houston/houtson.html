@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Artistreet-Houston</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+  #map{width:100%;height400px}
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+  </head>
+<body>
 
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">HOUSTON, TXD</a>
+  </header>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="http://1.bp.blogspot.com/-_dZ85eVqHoo/VjfdxUEwniI/AAAAAAAAAWk/tRa7gLEjBJw/s1600/_MG_6714-HDR.jpg" style="width:100%">
+      <img src="https://thebuzzmagazines.com/sites/default/files/article-photos/2017/06/MURAL%2015_0.jpg" style="width:100%">
+      <img src="http://www.artfuldodgy.com/uploads/3/0/3/7/30371671/448394_orig.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="http://www.wearwherewell.com/wp-content/uploads/2016/09/Wear-Where-Well-Houston-Mural-Guide_0005.jpg" style="width:100%">
+      <img src="http://2.bp.blogspot.com/-xc-8UprDNcY/VZSve-pxcOI/AAAAAAAARzQ/IpVtbim1Pww/s1600/Mural%2Bat%2Bformer%2BSocial%2BSecurity%2BOffice%2Bon%2Bcorner%2Bof%2BFannin%2Band%2BElgin-%2BJune%2B2015.JPG" style="width:100%">
+      <img src="http://chanelmovingforward.com/wp-content/uploads/2017/03/wsi-imageoptim-prince.jpg" style="width:100%">
+    </div>
+  </div>
+  <div id="map"></div>
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoPM0R5N4odvCFInawvXoTX3W9wQynw64&callback=initMap">
+    </script>
+  
+<!-- End Page Content -->
+</div>
+ 
+</body>
+</html>
