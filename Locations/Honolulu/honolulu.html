@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Artistreet-Honolulu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://halongpbn.github.io/gwc-project-final/Locations/popup.css">
+<style>
+  #map {width:100%;height:400px}
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+  </head>
+<body>
 
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">HONOLULU, HI</a>
+    <a href="https://halongpbn.github.io/gwc-project-final/Locations/locations.html" class="w3-right w3-button w3-white">Back to Locations</a>
+  </header>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="http://3.bp.blogspot.com/-UY33NID_NiM/U3vAbnB9GnI/AAAAAAAARZ8/OHtuCffHQiE/s1600/Mau%2528Kushimi%2529Finished.jpg" style="width:100%" onclick="onClick(this)" alt="text">
+      <img src="http://3.bp.blogspot.com/-GFSNCf0uhBQ/US3uZmYQKQI/AAAAAAAAlOQ/EF3X-odOTvs/s1600/streetartnews_rone_kameahadar_haawaii-1.jpeg" style="width:100%" onclick="onClick(this)" alt="text">
+      <img src="http://kollaboration.org/content/uploads/2016/07/HapaMural.jpg" style="width:100%" onclick="onClick(this)" alt="text">
+    </div>
+
+    <div class="w3-half">
+      <img src="http://streetarthub.com/wp-content/uploads/2015/02/12840904884_ef08e69efc_o.jpg" style="width:100%" onclick="onClick(this)" alt="text">
+      <img src="http://1amsf.com/wp-content/uploads/2014/08/FreshMural2-1024x683.jpg" style="width:100%" onclick="onClick(this)" alt="text">
+      <img src="http://streetarthub.com/wp-content/uploads/2014/12/pow-wow-tristan-eaton-versace-medusa-mural-9-960x640.jpg" alt="text">
+    </div>
+  </div>
+  <!--modal-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  </div>
+ <div id="map"></div>
+  <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoPM0R5N4odvCFInawvXoTX3W9wQynw64&callback=initMap">
+    </script>
+</body>
+</html>
