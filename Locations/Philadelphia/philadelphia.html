@@ -28,9 +28,9 @@ body {font-family: "Raleway", Arial, sans-serif}
     <div class="w3-half">
       <img src="http://hearthesewalls.acfphiladelphia.org/resources/peacebanner.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Peace is a Haiku Song Mural<br>
 Artists: Josh Sarantitis and Parris Stancell">
-      <img src="https://www.muralarts.org/wp-content/uploads/2016/05/2013-005-Muses-Restoration.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://www.muralarts.org/wp-content/uploads/2016/05/2013-005-Muses-Restoration.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Philadelphia Muses <br>Artist: Meg Saligman">
       <img src="https://www.picsofcelebrities.com/celebrity/ernest-van-pelt/pictures/large/ernest-van-pelt-tattoos.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="https://www.muralarts.org/wp-content/uploads/2016/02/MAP-lincoln-financial-mural-MASTER.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://www.muralarts.org/wp-content/uploads/2016/02/MAP-lincoln-financial-mural-MASTER.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Lincoln Legacy <br>Artists: Josh Sarantitis and Eric Okdeh">
     </div>
 
     <div class="w3-half">
@@ -54,12 +54,17 @@ Artists: Josh Sarantitis and Parris Stancell">
       function initMap() {
         var crane_pic = {lat: 39.9399, lng: -75.1672};
         var muse_pic = {lat: 39.947947, lng: -75.162361};
-
+        var lincoln_legacy = {lat:39.949675, lng: -75.152653};
         var map = new google.maps.Map(document.getElementById('map'), {
+          center: crane_pic,
           zoom: 4,
         });
         var marker = new google.maps.Marker({
           position: crane_pic,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: muse_pic,
           map: map
         });
         var marker = new google.maps.Marker({
