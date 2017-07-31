@@ -26,16 +26,16 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-      <img src="https://kareyquarton.files.wordpress.com/2014/09/mural_edited-1.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="https://sarahrosesharp.com/wp-content/uploads/2015/09/5729wide_HQ.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="http://cdn.loc.gov/service/pnp/vrg/00400/00411v.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="detroit1.jpg" style="width:100%" onclick="onClick(this)" alt="text">
+      <img src="https://kareyquarton.files.wordpress.com/2014/09/mural_edited-1.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Our Land til Death<br>Artist: Sintex">
+      <img src="https://sarahrosesharp.com/wp-content/uploads/2015/09/5729wide_HQ.jpg" style="width:100%" onclick="onClick(this)" alt="Name: The Detroit Portrait Series<br>Artist: Nicole MacDonald">
+      <img src="http://cdn.loc.gov/service/pnp/vrg/00400/00411v.jpg" style="width:100%" onclick="onClick(this)" alt="Name: African Amalgamation of Ubiquity<br>Artist: Curtis Lewis">
+      <img src="detroit1.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Unknown<br>Artist: Dasic Fernandez">
     </div>
 
     <div class="w3-half">
-      <img src="https://bbandm.files.wordpress.com/2014/11/rise-up-final-_0041.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="http://news.1xrun.com/wp-content/uploads/2015/05/1xrun-saner-mural-detroit19.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="wall.jpg" style="width:100%" onclick="onClick(this)" alt="text">
+      <img src="https://bbandm.files.wordpress.com/2014/11/rise-up-final-_0041.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Rise Up<br>Artist: David “Meggs” Hooke">
+      <img src="http://news.1xrun.com/wp-content/uploads/2015/05/1xrun-saner-mural-detroit19.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Unknown<br>Artist: Saner">
+      <img src="wall.jpg" style="width:100%" onclick="onClick(this)" alt="Name: The Illuminated Mural<br>Artist: Katherine Craig">
     </div>
   </div>
   <!--modal-->
@@ -51,13 +51,39 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var land_til_death = {lat: 42.347306, lng: -83.086594};
+        var detroit_portrait = {lat: 42.352879, lng: -83.100321};
+        var lion = {lat: 42.372762, lng: -83.057322};
+        var famous_black = {lat: 42.393863, lng: -83.004313};
+        var tribe = {lat: 42.305344, lng: -83.123265};
+        var mushroom_trees = {lat: 42.39028, lng: -83.05315};
+        var illuminated = {lat: 42.372013, lng: -83.067465};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
+          zoom:14,
+          center: land_til_death
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: land_til_death,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: detroit_portrait,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: famous_black,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: tribe,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: mushroom_trees,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: illuminated,
           map: map
         });
       }
