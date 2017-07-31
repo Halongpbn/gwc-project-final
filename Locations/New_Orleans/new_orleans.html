@@ -26,15 +26,15 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-      <img src="http://i0.wp.com/gonola.com/images/gasa-gasa_freret-street_susan-whelan.jpg?fit=1280%2C856" style="width:100%" onclick="onClick(this)" alt="Name: Gasa-Gasa<br>Artist: MTO">
-      <img src="https://c1.staticflickr.com/5/4015/4571857414_065fa64d2f_b.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Coming Home Mural<br>Artist: Young Aspirations/Young Artists Inc.">
+      <img src="http://i0.wp.com/gonola.com/images/gasa-gasa_freret-street_susan-whelan.jpg?fit=1280%2C856" style="width:100%" onclick="onClick(this)" alt="Name: Gasa-Gasa In Nola<br>Artist: MTO">
+      <img src="https://c1.staticflickr.com/5/4015/4571857414_065fa64d2f_b.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Coming Home Mural<br>Artist: Young Aspirations/ Young Artists Inc.">
       <img src="leaf.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Monk Parrot Mural<br>Artist: Jeremy Novy">
     </div>
 
     <div class="w3-half">
       <img src="http://thefrontlinemusic.com/wp-content/uploads/2013/05/029-frenchmen-street.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Untitled<br>Artist: Unknown">
-      <img src="https://greenglobaltravel.com/wp-content/uploads/Treme-New-Orleans-Street-art.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Untitled<br>Artist: Unknown">
-      <img src="http://nolavie.com/wp-content/uploads/2014/11/p3-3.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Exhibit Be<br>Artist: Brandan Odums">
+      <img src="https://greenglobaltravel.com/wp-content/uploads/Treme-New-Orleans-Street-art.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="http://nolavie.com/wp-content/uploads/2014/11/p3-3.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Exhibit Be <br>Artist: Brandan Odums">
     </div>
   </div>
   <!--modal-->
@@ -50,13 +50,33 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var sunglasses = {lat: 29.934805, lng: -90.107933};
+        var clowns = {lat: 29.96336, lng: -90.057556};
+        var windows = {lat:  29.943666, lng: -90.07058};
+        var parrot = {lat: 29.96896, lng: -90.055408};
+        var exhibit = {lat: 29.928815,lng: -90.025963};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: uluru
+          zoom: 4,
+          center: sunglasses
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: sunglasses,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: clowns,
+          map: map
+        });
+         var marker = new google.maps.Marker({
+          position: windows,
+          map: map
+        });
+         var marker = new google.maps.Marker({
+          position: parrot,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: exhibit,
           map: map
         });
       }
