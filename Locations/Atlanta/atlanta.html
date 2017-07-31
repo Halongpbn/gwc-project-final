@@ -27,10 +27,10 @@ body {font-family: "Raleway", Arial, sans-serif}
   <div class="w3-row">
     <div class="w3-half">
       <img id="myImg" src="https://cdn.sfstation.com/wp-content/uploads/2016/05/axelvoid_main.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Nobody<br>Artist: Axel Void">
-      <img id="myImg" src="http://www.tellmeallaboutyourday.com/wp-content/uploads/twainslwa.jpg?9e1398" style="width:100%" onclick="onClick(this)" alt="Idk what to put here">
+      <img id="myImg" src="http://www.tellmeallaboutyourday.com/wp-content/uploads/twainslwa.jpg?9e1398" style="width:100%" onclick="onClick(this)" alt="Name: Unknown<br>Artists: Gaia, Doodles, Nanook">
     </div>
     <div class="w3-half">
-      <img id="myImg" src="https://cdn.vox-cdn.com/thumbor/5Y4DsgCT8EJ6CHQGp368LlY_R4w=/0x306:2448x2142/1200x900/filters:focal(0x306:2448x2142)/cdn.vox-cdn.com/uploads/chorus_image/image/47915809/Photo_20Jun_2012__2010_2051_2029_20AM.0.jpg" style="width:100%" onclick="onClick(this)" alt="lol">
+      <img id="myImg" src="https://cdn.vox-cdn.com/thumbor/5Y4DsgCT8EJ6CHQGp368LlY_R4w=/0x306:2448x2142/1200x900/filters:focal(0x306:2448x2142)/cdn.vox-cdn.com/uploads/chorus_image/image/47915809/Photo_20Jun_2012__2010_2051_2029_20AM.0.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Blue Statement<br>Artist: LNY">
           </div>  
     </div>
   <!--modal-->
@@ -47,12 +47,22 @@ body {font-family: "Raleway", Arial, sans-serif}
 <script>
       function initMap() {
         var nobody = {lat:33.745434, lng: -84.404203};
+        var blue_boy = {lat: 33.745644, lng: -84.368334};
+        var doodle = {lat: 33.772352, lng: -84.294675};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: nobody
         });
         var marker = new google.maps.Marker({
           position: nobody,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: blue_boy,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: doodle,
           map: map
         });
       }
