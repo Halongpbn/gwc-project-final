@@ -26,16 +26,16 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-      <img src="https://c2.staticflickr.com/2/1482/25266211421_30d1b18d82_b.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="beautiful.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="https://brlippert.files.wordpress.com/2016/02/greetings-from-chicago-mural-logan-square.jpg?w=930&h=504" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="deer.jpg" style="width:100%" onclick="onClick(this)" alt="text">
+      <img src="https://c2.staticflickr.com/2/1482/25266211421_30d1b18d82_b.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Moose Bubblegum Bubble<br>Artist: Jacob Watts">
+      <img src="beautiful.jpg" style="width:100%" onclick="onClick(this)" alt="Name: You are Beautiful<br>Artist: Matthew Hoffman">
+      <img src="https://brlippert.files.wordpress.com/2016/02/greetings-from-chicago-mural-logan-square.jpg?w=930&h=504" style="width:100%" onclick="onClick(this)" alt="Name: Greetings from Chicago<br>Artist: Victor Ving">
+      <img src="deer.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Impossible Meeting<br>Artist: Marina Zumi">
     </div>
 
     <div class="w3-half">
-      <img src="https://s-media-cache-ak0.pinimg.com/originals/65/b2/6a/65b26a7b7ccc665c9a9c8971c759c31f.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="http://www.thisiscolossal.com/wp-content/uploads/2016/05/collin-1.jpg" style="width:100%" onclick="onClick(this)" alt="text">
-      <img src="http://blogs.luc.edu/expressionist/files/2015/04/IMG_3993.jpg" style="width:100%" onclick="onClick(this)" alt="text">
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/65/b2/6a/65b26a7b7ccc665c9a9c8971c759c31f.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Muddy Waters<br>Artist: Eduardo Kobra">
+      <img src="http://www.thisiscolossal.com/wp-content/uploads/2016/05/collin-1.jpg" style="width:100%" onclick="onClick(this)" alt="Name: From Bloom to Doom<br>Artist: Collin van der Sluijs">
+      <img src="http://blogs.luc.edu/expressionist/files/2015/04/IMG_3993.jpg" style="width:100%" onclick="onClick(this)" alt="Name: The Owl<br>Artist: Brooks Golden">
     </div>
   </div>
   <!--modal-->
@@ -51,14 +51,44 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var moose = {lat: 41.875548, lng: -87.626518};
+        var beautiful = {lat:42.007517, lng: -87.67513};
+        var rainbow_guitar = {lat: 41.882646, lng: -87.626722};
+        var greetings = {lat:41.921072, lng: -87.694931};
+        var bird = {lat: 41.869651, lng: -87.6246};
+        var deer = {lat: 41.870201, lng: -87.624742};
+        var owl = {lat:41.859767, lng: -87.656475};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
-          center: uluru
+          center: moose
         });
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+          position: moose,
+          map: map,
+        });
+        var marker = new google.maps.Marker({
+          position: beautiful,
+          map: map,
+        });
+        var marker = new google.maps.Marker({
+          position: rainbow_guitar,
+          map: map,
+        });
+         var marker = new google.maps.Marker({
+          position: greetings,
+          map: map,
+        });
+         var marker = new google.maps.Marker({
+          position: bird,
+          map: map,
+        });
+        var marker = new google.maps.Marker({
+          position: deer,
+          map: map,
+        });
+         var marker = new google.maps.Marker({
+          position: owl,
+          map: map,
         });
       }
     </script>
