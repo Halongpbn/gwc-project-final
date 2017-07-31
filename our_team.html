@@ -4,15 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather" rel="stylesheet">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: 'Josefin Sans', sans-serif;}
-.w3-quarter img{margin-bottom: -6px; cursor: pointer}
-.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey">
-
- </div>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
   
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:200px;font-weight:bold;display:none;right:0;" id="mySidebar">
@@ -27,46 +25,98 @@ body,h1,h2,h3,h4,h5 {font-family: 'Josefin Sans', sans-serif;}
   <a href="javascript:void(0)" class="w3-right w3-button w3-white" onmouseover="w3_open()">☰</a>
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">All</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Team Members</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Our Fave Art</button>
+    </div>
+    </div>
+  </header>
   
-  <!-- Photo grid -->
- <div style="padding-top:130px">
-  <div class="w3-row w3-grayscale-min">
-    <div class="w3-quarter">
-      <img src="me3.jpg" style="width:100%" onclick="onClick(this)" alt="Sabrina: ASB Prez, Boba Queen, Music Addict">
-      <img src="alyssa.jpg" style="width:100%" onclick="onClick(this)" alt="Alyssa: Environmentalist, Total konvert, Trying to be frugal">
-      <img src="profile.jpg" style="width:100%" onclick="onClick(this)" alt="Abinaya: DECA lover, Art enthusiast, Dancer">
-   </div>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="me3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Sabrina</b></p>
+        <p>ASB Prez, Boba Queen, Music Addict</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="alyssa.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Alyssa</b></p>
+        <p>Environmentalist, Total konvert, Trying to be frugal</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="profile.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Abi</b></p>
+        <p>DECA lover, Art enthusiast, Dancer</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="alana.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Alana</b></p>
+        <p>Bookworm, Animal lover, Enjoys piano and drawing</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="nikhila.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Nikhila</b></p>
+        <p>Coffee fanatic, Dog lover, Netflix fan</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="uno.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Girl's Who Code</b></p>
+        <p>Education Group @ Pivotal</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
     
-   <div class="w3-quarter">
+<!--    <div class="w3-quarter">
       <img src="wings.jpg" style="width:350px" "length:350px" onclick="onClick(this)" alt="Although extremely basic, I love the wings art's symbolism of setting free and feeling lust of happiness.">
       <img src="alyssa_pic.jpg" style="width:100%" onclick="onClick(this)" alt="I really enjoyed seeing the asian inspired art during thie project, and this piece was just something that caught my eye.">
       <img src="AbiFavPic.jpg" style="width:100%" onclick="onClick(this)" alt="I particularly love this mural, because it's so vibrant and has so much going on, but is still peaceful and calming.">
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="alana.jpg" style="width:100%" onclick="onClick(this)" alt="Alana: Bookworm, Animal lover, Enjoys piano and drawing">
-      <img src="nikhila.jpg" style="width:100%" onclick="onClick(this)" alt="Nikhila: Coffee fanatic, Dog lover, Netflix fan">
-      <img src="uno.jpg" style="width:100%" onclick="onClick(this)" alt="This is the Girls Who Code Final Project Education group at Pivotal, Palo Alto.">
-    </div>
+    </div> -->
 
-    <div class="w3-quarter">
+<!--     <div class="w3-quarter">
       <img src="alanapic.jpg" style="width:100%" onclick="onClick(this)" alt="Because I'm an animal lover, I thought this was very cute.">
       <img src="NikhilaFavPic.jpg" style="width:100%" onclick="onClick(this)" alt="I love this piece, because it represents strength and unity in a community during a time of racial tension and violence.">
       <img src="gwc.jpg" style="width:100%" onclick="onClick(this)" alt="Girls who code is a national non-profit organization dedicated to closing the gender gap in technology.">
     </div>
-  </div>
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
- </div>
+  </div> -->
   
 <!-- End page content -->
 </div>
