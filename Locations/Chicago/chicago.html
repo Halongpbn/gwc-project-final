@@ -67,7 +67,10 @@ body {font-family: "Raleway", Arial, sans-serif}
           position: moose,
           map: map,
           icon:'moose.png',
-          scaledSize: new google.maps.Size(10, 10)
+          scaledSize: {
+            height: 40,
+            width: 40
+
         });
         var marker = new google.maps.Marker({
           position: beautiful,
