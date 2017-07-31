@@ -27,14 +27,14 @@ body {font-family: "Raleway", Arial, sans-serif}
   <div class="w3-row">
     <div class="w3-half">
       <img src="http://streetartnyc.org/wp-content/uploads/2012/11/Joel-Bergner-street-art-in-Bushwick-New-York-City.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="https://farm8.static.flickr.com/7477/29014788630_3ba1476554_b.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="https://c1.staticflickr.com/4/3767/19570258568_f487687546_b.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="https://farm8.static.flickr.com/7477/29014788630_3ba1476554_b.jpg" style="width:100%" onclick="onClick(this)" alt="Name: The Story of my Life<br>Artist: Logan Hicks">
+      <img src="https://c1.staticflickr.com/4/3767/19570258568_f487687546_b.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Save Yazidi Women<br>Artist: Danielle Mastrion">
     </div>
 
     <div class="w3-half">
-      <img src="http://streetartnyc.org/wp-content/uploads/2017/06/sunny-sundancer-mural-art-LES-NYC.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="http://sanatkaravani.com/wp-content/uploads/2016/06/new-york-2.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="bleeding.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="http://streetartnyc.org/wp-content/uploads/2017/06/sunny-sundancer-mural-art-LES-NYC.jpg" style="width:100%" onclick="onClick(this)" alt="Name: To the Bone<br>Artist: Sonny">
+      <img src="http://sanatkaravani.com/wp-content/uploads/2016/06/new-york-2.jpg" style="width:100%" onclick="onClick(this)" alt="Tedt">
+      <img src="bleeding.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Bleeding Heart<br>Artist: Jeremy Goldcrown">
     </div>
   </div>
    <!--modal-->
@@ -50,13 +50,18 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var lion = {lat: 40.718707, lng: -73.990801};
+        var story_of_my_life = {lat:40.721727, lng: -73.98485};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
-          center: uluru
+          center: lion
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: lion,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: story_of_my_life,
           map: map
         });
       }
