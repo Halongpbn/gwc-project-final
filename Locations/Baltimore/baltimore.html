@@ -26,15 +26,15 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-      <img id="myImg" src="robot.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img id="myImg" src="mad.jpg" style="width:100%" onclick="onClick(this)" alt="more text">
-      <img id="myImg" src="fingers.jpg" style="width:100%" onclick="onClick(this)" alt="pls work">
+      <img src="robot.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Unkown<br>Artist:Pixel Poncho">
+      <img src="mad.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Shawnee’s Call<br>Artist: LNY">
+      <img src="fingers.jpg" style="width:100%" onclick="onClick(this)" alt="Name:The Love Project<br>Artist:Michael Owen">
     </div>
 
     <div class="w3-half">
-      <img id="myImg" src="https://s-media-cache-ak0.pinimg.com/originals/df/e8/e3/dfe8e30b382809c41f013ee4010be406.jpg" style="width:100%" onclick="onClick(this)" alt="lol">
-      <img id="myImg" src="http://www.aljazeera.com/mritems/Images/2015/6/17/be030b4a51a34d5ea37b877ffb843017_18.jpg" style="width:100%" onclick="onClick(this)" alt="hey friends">
-      <img id="myImg" src="http://static.wixstatic.com/media/9398f9_cf17951afaad49f9addbe53370855adb.jpg_srz_1113_635_85_22_0.50_1.20_0.00_jpg_srz" style="width:100%" onclick="onClick(this)" alt="heyyyyyy">
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/df/e8/e3/dfe8e30b382809c41f013ee4010be406.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Unkown<br>Artist:Unknown">
+      <img src="http://www.aljazeera.com/mritems/Images/2015/6/17/be030b4a51a34d5ea37b877ffb843017_18.jpg" style="width:100%" onclick="onClick(this)" alt="hey friends">
+      <img src="http://static.wixstatic.com/media/9398f9_cf17951afaad49f9addbe53370855adb.jpg_srz_1113_635_85_22_0.50_1.20_0.00_jpg_srz" style="width:100%" onclick="onClick(this)" alt="Name:Justice Nethercut<br>Artist:Nether">
     </div>
   </div>
   <!--modal-->
@@ -50,13 +50,33 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var robot = {lat: 39.293819, lng: -76.618711};
+        var shawnee = {lat: 39.293961, lng: -76.665437};
+        var handcuff = {lat:39.293249, lng: 76.647189};
+        var love = {lat:39.312125, lng: -76.585225};
+        var justin = {lat:  39.308003, lng: -76.644831};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
-          center: uluru
+          center: robot
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: robot,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: shawnee,
+          map: map
+        });
+          var marker = new google.maps.Marker({
+          position: love,
+          map: map
+        });
+          var marker = new google.maps.Marker({
+          position: handcuff,
+          map: map
+        });
+          var marker = new google.maps.Marker({
+          position: justin,
           map: map
         });
       }
