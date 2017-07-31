@@ -63,6 +63,19 @@ body {font-family: "Raleway", Arial, sans-serif}
           zoom: 12,
           center: moose
         });
+        var icon = {
+          url: "guyc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon = {
+          url: "moose.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        
         var marker = new google.maps.Marker({
           position: moose,
           map: map,
@@ -70,6 +83,7 @@ body {font-family: "Raleway", Arial, sans-serif}
           scaledSize: {
             height: 40,
             width: 40
+
           }
         });
         var marker = new google.maps.Marker({
