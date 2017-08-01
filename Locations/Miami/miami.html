@@ -51,28 +51,38 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var man = {lat: 35.134427, lng: -90.058913};
-        var paint_wall = {lat: 35.172702, lng: -90.000174}
-        var memphis_mural = {lat: 35.125029, lng: -89.990429};
-        var blob_guy = {lat: 35.134174, lng: -90.062958};
+        var chameleon = {lat: 25.801062, lng: -80.199302};
+        var diamonds = {lat: 25.801062, lng: -80.199302};
+        var face = {lat: 25.801062, lng: -80.199302};
+        var life = {lat:  25.786305, lng: -80.201065};
+        var a_lot_of_faces = {lat: 25.801062, lng: -80.199302};
+        var yoda = {lat: 25.801062, lng: -80.199302};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: man
+          center: chameleon
         });
         var marker = new google.maps.Marker({
-          position: man,
+          position: chameleon,
           map: map
         });
         var marker = new google.maps.Marker({
-          position: paint_wall,
+          position: diamonds,
           map: map
         });
         var marker = new google.maps.Marker({
-          position: memphis_mural,
+          position: face,
           map: map
         });
         var marker = new google.maps.Marker({
-          position: blob_guy,
+          position: life,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: a_lot_of_faces,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: yoda,
           map: map
         });
       }
