@@ -51,13 +51,28 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var man = {lat: 35.134427, lng: -90.058913};
+        var paint_wall = {lat: 35.172702, lng: -90.000174}
+        var memphis_mural = {lat: 35.125029, lng: -89.990429};
+        var blob_guy = {lat: 35.134174, lng: -90.062958};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: uluru
+          center: man
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: man,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: paint_wall,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: memphis_mural,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: blob_guy,
           map: map
         });
       }
