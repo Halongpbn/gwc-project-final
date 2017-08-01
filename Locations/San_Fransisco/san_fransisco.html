@@ -242,6 +242,36 @@ body {font-family: "Raleway", Arial, sans-serif}
            origin: new google.maps.Point(0,0), // origin
            anchor: new google.maps.Point(0, 0) // anchor
         };
+        var icon2 = {
+          url: "personc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon3 = {
+          url: "wallc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon4 = {
+          url: "peacockc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon5 = {
+          url: "whalec.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon6 = {
+          url: "dragonc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
           
         var marker = new google.maps.Marker({
           position: rainbow,
@@ -250,23 +280,28 @@ body {font-family: "Raleway", Arial, sans-serif}
         });
          var marker = new google.maps.Marker({
           position: carmen,
-          map: map
+          map: map,
+          icon: icon2,
         });
         var marker = new google.maps.Marker({
           position: voice,
-          map: map
+          map: map,
+          icon: icon3,
         });
          var marker = new google.maps.Marker({
           position: peacock,
-          map: map
+          map: map,
+          icon: icon4,
         });
          var marker = new google.maps.Marker({
           position: whale,
-          map: map
+          map: map,
+          icon: icon5,
         });
         var marker = new google.maps.Marker({
           position: dragon,
-          map: map
+          map: map,
+          icon: icon6,
         });
       }
     </script>
