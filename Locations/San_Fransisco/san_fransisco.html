@@ -52,8 +52,10 @@ body {font-family: "Raleway", Arial, sans-serif}
       function initMap() {
         var rainbow = {lat: 37.769535, lng: -122.450736};
         var carmen = {lat: 37.784407, lng: -122.420263};
+        var voice = {lat: 37.762982, lng: -122.420794};
         var peacock = {lat: 37.778687, lng: -122.421242};
         var whale = {lat: 37.763043, lng: -122.420328};
+        var dragon = {lat: 37.792101, lng: -122.405886};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: rainbow
@@ -66,12 +68,20 @@ body {font-family: "Raleway", Arial, sans-serif}
           position: carmen,
           map: map
         });
+        var marker = new google.maps.Marker({
+          position: voice,
+          map: map
+        });
          var marker = new google.maps.Marker({
           position: peacock,
           map: map
         });
          var marker = new google.maps.Marker({
           position: whale,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: dragon,
           map: map
         });
       }
