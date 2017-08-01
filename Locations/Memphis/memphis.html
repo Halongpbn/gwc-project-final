@@ -27,12 +27,12 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <div class="w3-half">
-      <img src="http://static1.squarespace.com/static/588e7b92b8a79b901b666cec/5892267e1b10e3ec9253abd7/589244876b8f5bc5aab7ee08/1486680914879/3764945.jpg?format=1000w" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="mem.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="http://static1.squarespace.com/static/588e7b92b8a79b901b666cec/5892267e1b10e3ec9253abd7/589244876b8f5bc5aab7ee08/1486680914879/3764945.jpg?format=1000w" style="width:100%" onclick="onClick(this)" alt="Name: I Am a Man Remix<br>Artist: Marcellous Lovelace">
+      <img src="mem.jpg" style="width:100%" onclick="onClick(this)" alt="Name: I Love Memphis mural<br>Artist: Brandon Marshall in collaboration with UrbanArt">
     </div>
     <div class="w3-half">
-      <img src="http://1tlmo92ipsnm1fchmn35l7xz-wpengine.netdna-ssl.com/wp-content/uploads/2015/01/11058634_10206376953398049_4810518360835322959_o-1024x683.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
-      <img src="http://stevenmichaelphotographyandart.com/wp-content/uploads/2015/04/good-investment-steven-michael.jpg" style="width:100%" onclick="onClick(this)" alt="Text">
+      <img src="http://1tlmo92ipsnm1fchmn35l7xz-wpengine.netdna-ssl.com/wp-content/uploads/2015/01/11058634_10206376953398049_4810518360835322959_o-1024x683.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Paint Memphis Wall<br>Artists: 50+different artists">
+      <img src="http://stevenmichaelphotographyandart.com/wp-content/uploads/2015/04/good-investment-steven-michael.jpg" style="width:100%" onclick="onClick(this)" alt="Name: Invest in Good Times<br>Artist: Unknown">
     </div>
   </div>
   <!--modal-->
@@ -48,13 +48,28 @@ body {font-family: "Raleway", Arial, sans-serif}
   <script src="https://halongpbn.github.io/gwc-project-final/Locations/popup.js"></script>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var man = {lat: 35.134427, lng: -90.058913};
+        var paint_wall = {lat: 35.172702, lng: -90.000174}
+        var memphis_mural = {lat: 35.125029, lng: -89.990429};
+        var blob_guy = {lat: 35.134174, lng: -90.062958};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: uluru
+          center: man
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: man,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: paint_wall,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: memphis_mural,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: blob_guy,
           map: map
         });
       }
