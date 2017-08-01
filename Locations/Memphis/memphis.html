@@ -231,22 +231,52 @@ body {font-family: "Raleway", Arial, sans-serif}
         ]
     }
 ]
+          
         });
+        var icon = {
+          url: "manc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon2 = {
+          url: "evergreenc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon3 = {
+          url: "lovec.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon4 = {
+          url: "goodc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+
         var marker = new google.maps.Marker({
           position: man,
-          map: map
+          map: map,
+          icon: icon,
         });
         var marker = new google.maps.Marker({
           position: paint_wall,
-          map: map
+          map: map,
+          icon:icon2,
         });
         var marker = new google.maps.Marker({
           position: memphis_mural,
-          map: map
+          map: map,
+          icon:icon3
         });
         var marker = new google.maps.Marker({
           position: blob_guy,
-          map: map
+          map: map,
+          icon:icon4,
         });
       }
     </script>
