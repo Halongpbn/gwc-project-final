@@ -55,6 +55,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="me3.jpg"  alt="Sabrina" style="width:100%" onclick="onClick(this)"class="w3-hover-opacity"/>
+      <div class="art_pic">
+        <img src="wings.jpg" style="width:350px" "length:350px" onclick="onClick(this)" alt="Although extremely basic, I love the wings art's symbolism of setting free and feeling lust of happiness.">
+      </div>
       <div class="w3-container w3-white">
         <p><b>Sabrina</b></p>
         <p>ASB Prez, Boba Queen, Music Addict</p>
@@ -136,6 +139,8 @@ function w3_close() {
 }
 // Modal Image Gallery
 function onClick(element) {
+  var img = document.getElementById("art_pic");
+  img.style.visibility = 'visible';
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
