@@ -236,9 +236,17 @@ body {font-family: "Raleway", Arial, sans-serif}
     }
 ]
         });
+        var icon = {
+          url: "rainbow.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+          
         var marker = new google.maps.Marker({
           position: rainbow,
-          map: map
+          map: map,
+          icon: icon,
         });
          var marker = new google.maps.Marker({
           position: carmen,
