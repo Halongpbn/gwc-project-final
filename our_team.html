@@ -141,7 +141,7 @@ function w3_close() {
 function onClick(element) {
   var img = document.getElementById("art_pic");
   img.style.visibility = 'visible';
-  document.getElementById("img01").src = element.src;
+  document.getElementById("img01").src = img.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
