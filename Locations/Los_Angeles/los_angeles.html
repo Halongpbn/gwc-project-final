@@ -49,15 +49,41 @@ body {font-family: "Raleway", Arial, sans-serif}
   <div id="map"></div>
 <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var sun = {lat: 34.03829, lng: -118.238026};
+        var geishas = {lat: 34.046684, lng: -118.246983};
+        var purple_sunglasses = {lat: 34.094523, lng: -118.37435};
+        var ghandi = {lat: 34.045215, lng: -118.236311};
+        var botox = {lat: 34.045639, lng: -118.236389};
+        var angel = {lat: 33.994892, lng: -118.455171};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: uluru
+          center: sun
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: sun,
           map: map
         });
+        var marker = new google.maps.Marker({
+          position: geishas,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: purple_sunglasses,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: ghandi,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: botox,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: angel,
+          map: map
+        });
+        
       }
     </script>
     <script async defer 
