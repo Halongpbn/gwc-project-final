@@ -52,6 +52,8 @@ body {font-family: "Raleway", Arial, sans-serif}
 <script>
       function initMap() {
         var goddess = {lat: 32.227278, lng: -110.969954};
+        var skeleton = {lat: 32.21522, lng: -110.969673};
+        var fish = {lat: 32.19347, lng: -110.96538};
         var hippie = {lat: 32.226221, lng: -110.965781};
         var orange_mask = {lat: 32.221073, lng: -110.967514};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -60,6 +62,14 @@ body {font-family: "Raleway", Arial, sans-serif}
         });
         var marker = new google.maps.Marker({
           position: goddess,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: skeleton,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: fish,
           map: map
         });
          var marker = new google.maps.Marker({
