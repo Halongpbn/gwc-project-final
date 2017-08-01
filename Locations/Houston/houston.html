@@ -52,13 +52,43 @@ body {font-family: "Raleway", Arial, sans-serif}
   <div id="map"></div>
 <script>
       function initMap() {
+        var octopus_hair = {lat: 29.775508, lng: -95.312113};
+        var inspired = {lat: 29.762152, lng: -95.36177};
+        var vertical_paint = {lat: 29.742795, lng: -95.39755};
+        var queen_paint = {lat: 29.743722, lng: -95.380522};
         var butter = {lat: 30.280389, lng: -97.719829};
+        var purple_zipper = {lat: 29.746995, lng: -95.358837};
+        var butterfly = {lat: 29.755328, lng: -95.350517}
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: butter
         });
-        var marker = new google.maps.Marker({
+         var marker = new google.maps.Marker({
+          position: octopus_hair,
+          map: map
+        });
+         var marker = new google.maps.Marker({
+          position: inspired,
+          map: map
+        });
+         var marker = new google.maps.Marker({
+          position: vertical_paint,
+          map: map
+        });
+         var marker = new google.maps.Marker({
+          position: queen_paint,
+          map: map
+        });
+         var marker = new google.maps.Marker({
           position: butter,
+          map: map
+        });
+         var marker = new google.maps.Marker({
+          position: purple_zipper,
+          map: map
+        });
+         var marker = new google.maps.Marker({
+          position: butterfly,
           map: map
         });
       }
