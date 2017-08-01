@@ -237,30 +237,74 @@ body {font-family: "Raleway", Arial, sans-serif}
         ]
     }
 ]
+          
         });
+        var icon = {
+          url: "wallc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };  
+        var icon2 = {
+          url: "housec.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon3 = {
+          url: "guyc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon4 = {
+          url: "maskc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon5 = {
+          url: "hajc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon6 = {
+          url: "streakc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };  
+        
         var marker = new google.maps.Marker({
           position: land_til_death,
-          map: map
+          map: map,
+          icon: icon,
         });
         var marker = new google.maps.Marker({
           position: detroit_portrait,
-          map: map
+          map: map,
+          icon: icon2,
         });
         var marker = new google.maps.Marker({
           position: famous_black,
-          map: map
+          map: map,
+          icon:icon3,
         });
         var marker = new google.maps.Marker({
           position: tribe,
-          map: map
+          map: map,
+          icon: icon4,
         });
         var marker = new google.maps.Marker({
           position: mushroom_trees,
-          map: map
+          map: map,
+          icon:icon5,
         });
         var marker = new google.maps.Marker({
           position: illuminated,
-          map: map
+          map: map,
+          icon:icon6,
         });
       }
     </script>
