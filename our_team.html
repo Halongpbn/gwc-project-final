@@ -9,11 +9,11 @@
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather" rel="stylesheet">
   
 <script>
-  function onClick(element) {
-//   document.getElementById("img01").src = element.src;
+  function onClick(newimg) {
+  document.getElementById("img01").src = newimg.src;
   document.getElementById("modal01").style.display = "block";
-//   var captionText = document.getElementById("caption");
-//   captionText.innerHTML = element.alt;
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
 }
   </script>
   
@@ -64,7 +64,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="me3.jpg"  alt="Sabrina likes this pic" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="me3.jpg"  alt="Sabrina likes this pic" style="width:100%" onclick="onClick(wing2.jpg)" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Sabrina</b></p>
         <p>ASB Prez, Boba Queen, Music Addict</p>
