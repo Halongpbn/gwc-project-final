@@ -60,7 +60,7 @@ body {font-family: "Raleway", Arial, sans-serif}
         var hippie = {lat: 32.226221, lng: -110.965781};
         var orange_mask = {lat: 32.221073, lng: -110.967514};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
+          zoom: 13,
           center: goddess,
           styles: [
     {
@@ -238,26 +238,63 @@ body {font-family: "Raleway", Arial, sans-serif}
         ]
     }
 ]
+          
         });
+        var icon = {
+          url: "cucc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon2 = {
+          url: "skelec.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon3 = {
+          url: "fishc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon4 = {
+          url: "uglyc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon5 = {
+          url: "hairc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+          
         var marker = new google.maps.Marker({
           position: goddess,
-          map: map
+          map: map,
+          icon:icon,
         });
         var marker = new google.maps.Marker({
           position: skeleton,
-          map: map
+          map: map,
+          icon:icon2,
         });
         var marker = new google.maps.Marker({
           position: fish,
-          map: map
+          map: map,
+          icon:icon3,
         });
          var marker = new google.maps.Marker({
           position: hippie,
-          map: map
+          map: map,
+          icon:icon4,
         });
          var marker = new google.maps.Marker({
           position: orange_mask,
-          map: map
+          map: map,
+          icon:icon5,
         });
       }
     </script>
