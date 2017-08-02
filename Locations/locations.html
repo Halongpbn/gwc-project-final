@@ -257,7 +257,7 @@ function w3_close() {
 </script>
  <script>
 $(document).ready(function(){
-    $("body").not(#nav).click(function(){
+    $("body:not(#nav)").click(function(){
         w3_close();
     });
 });
