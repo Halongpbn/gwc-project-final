@@ -236,14 +236,31 @@ body {font-family: "Raleway", Arial, sans-serif}
         ]
     }
 ]
+          
         });
+        var icon = {
+          url: "lionc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon2 = {
+          url: "lifec.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+          
+
         var marker = new google.maps.Marker({
           position: lion,
-          map: map
+          map: map,
+          icon:icon,
         });
         var marker = new google.maps.Marker({
           position: story_of_my_life,
           map: map
+          icon:icon2,
         });
       }
     </script>
