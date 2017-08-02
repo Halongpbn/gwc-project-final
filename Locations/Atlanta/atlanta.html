@@ -10,12 +10,65 @@
 <style>
 body {font-family: "Josefin Sans", Josefin Sans, sans-serif}
 .w3-row img {margin-bottom: -8px}
+  
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, black 0%, #222 50%, black 100%);
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.loader {
+  color: white;
+  font-family: Ubuntu Mono, sans-serif;
+  font-weight: bold;
+  animation-duration: 10s;
+  animation-name: spread;
+  animation-iteration-count: infinite;
+  transform: translatez(0,0,0);
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.3em;
+  letter-spacing: 6em;
+  text-indent: -100%;
+}
+@keyframes spread {
+  from {
+    letter-spacing: 6em;
+    text-indent: -150%;
+  }
+  5% {
+  }
+  50% {
+    text-indent: 50%;
+    letter-spacing: 0.3em;
+  }
+  95% {
+  }
+  to {
+    letter-spacing: 6em;
+    text-indent: 120%;
+  }
+}
 </style>
   </head>
 <body>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
+  
+  <div class="background">
+  <p class="loader">Click on Art to Explore</p>
+</div>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:700' rel='stylesheet' type='text/css'>
 
   <!-- Header -->
   <header class="w3-container w3-xlarge w3-padding-24">
