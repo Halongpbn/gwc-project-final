@@ -61,7 +61,7 @@ body {font-family: "Raleway", Arial, sans-serif}
         var parrot = {lat: 29.96896, lng: -90.055408};
         var exhibit = {lat: 29.928815,lng: -90.025963};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 14,
           center: sunglasses,
           styles:[
     {
@@ -239,26 +239,63 @@ body {font-family: "Raleway", Arial, sans-serif}
         ]
     }
 ]
+          
         });
+        var icon = {
+          url: "glassesc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon2 = {
+          url: "clownc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon3 = {
+          url: "beadc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon4 = {
+          url: "birdsc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon5 = {
+          url: "personsc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+
         var marker = new google.maps.Marker({
           position: sunglasses,
-          map: map
+          map: map,
+          icon:icon,
         });
         var marker = new google.maps.Marker({
           position: clowns,
-          map: map
+          map: map,
+          icon:icon2,
         });
          var marker = new google.maps.Marker({
           position: windows,
-          map: map
+          map: map,
+           icon:icon3,
         });
          var marker = new google.maps.Marker({
           position: parrot,
-          map: map
+          map: map,
+           icon:icon4,
         });
         var marker = new google.maps.Marker({
           position: exhibit,
-          map: map
+          map: map,
+          icon:icon5,
         });
       }
     </script>
