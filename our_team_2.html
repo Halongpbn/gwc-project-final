@@ -37,8 +37,94 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Josefin Sans", sans-serif}
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-button w3-black">All</button>
-      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Team Members</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Our Fave Art</button>
+      <a href = "https://halongpbn.github.io/gwc-project-final/our_team.html"><button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Team Members</button></a>
+      <a href = "https://halongpbn.github.io/gwc-project-final/our_team_2.html"><button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Our Fave Art</button></a>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="me3.jpg" alt="Sabrina" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Sabrina</b></p>
+        <p>ASB Prez, Boba Queen, Music Addict</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="alyssa.jpg" alt="Alyssa" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Alyssa</b></p>
+        <p>Environmentalist, Total Konvert, Trying to be Frugal</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="profile.jpg" alt="Abi" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Abi</b></p>
+        <p>DECA Lover, Art Enthusiast, Dancer</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="alana.jpg" alt="Alana" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Alana</b></p>
+        <p>Bookworm, Animal Lover, Enjoys Piano and Drawing</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="NikhilaProfileNew.png" alt="Nikhila" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Nikhila</b></p>
+        <p>Coffee Fanatic, Dog Lover, Netflix Fan</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="uno.jpg" alt="Girls Who Code" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Girls Who Code</b></p>
+        <p>Education Group @ Pivotal</p>
+      </div>
+    </div>
+  </div>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+  <script>
+$(document).ready(function(){
+    $("body:not(#nav)").click(function(){
+        w3_close();
+    });
+});
+</script>
+
+
+</body>
+</html>
+
     </div>
     </div>
   </header>
