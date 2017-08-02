@@ -251,9 +251,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', sans-serif;}
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
 }
-("body").click(function () {
-      w3_close()
- }
+$(document).ready(function(){
+    $("body").click(function(){
+        w3_close;
+    });
+});
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
