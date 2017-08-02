@@ -62,7 +62,7 @@ body {font-family: "Raleway", Arial, sans-serif}
         var botox = {lat: 34.045639, lng: -118.236389};
         var angel = {lat: 33.994892, lng: -118.455171};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
+          zoom: 11,
           center: sun,
           styles: [
     {
@@ -241,29 +241,72 @@ body {font-family: "Raleway", Arial, sans-serif}
     }
 ]
         });
+        var icon = {
+          url: "sunc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon2 = {
+          url: "japc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon3 = {
+          url: "glassesc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon4 = {
+          url: "baldc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon5 = {
+          url: "girlc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon6 = {
+          url: "wingsc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+          
         var marker = new google.maps.Marker({
           position: sun,
-          map: map
+          map: map,
+          icon:icon,
         });
         var marker = new google.maps.Marker({
           position: geishas,
-          map: map
+          map: map,
+          icon:icon2,
         });
         var marker = new google.maps.Marker({
           position: purple_sunglasses,
-          map: map
+          map: map,
+          icon:icon3,
         });
         var marker = new google.maps.Marker({
           position: ghandi,
-          map: map
+          map: map,
+          icon:icon4,
         });
         var marker = new google.maps.Marker({
           position: botox,
-          map: map
+          map: map,
+          icon:icon5,
         });
         var marker = new google.maps.Marker({
           position: angel,
-          map: map
+          map: map,
+          icon:icon5,
         });
         
       }
