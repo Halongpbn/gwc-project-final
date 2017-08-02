@@ -76,7 +76,7 @@ body {font-family: 'Josefin Sans', sans-serif;}
     padding-top:15px; 
 }
 </style>
-	
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>	
 <script>                                                
     function changebutton() {
       document.getElementByID('explore').style.background-color = "white";
@@ -184,6 +184,12 @@ function myFunction() {
     }
 }
 </script>
-
+ <script>
+$(document).ready(function(){
+    $("body:not(#nav)").click(function(){
+        w3_close();
+    });
+});
+</script>
 </body>
 </html>
