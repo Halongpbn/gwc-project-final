@@ -248,11 +248,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', sans-serif;}
 </div>
 <script>
 // Script to open and close sidebar
+var toggle=false
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
+    toggle= true                                                            
 }
 $(document).ready(function(){
-    $("body").click(function(){
+    $("body").not(.w3-top).click(function(){
         w3_close();
     });
 });
