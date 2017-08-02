@@ -43,21 +43,22 @@ body {font-family: 'Josefin Sans', sans-serif;}
 .dropdown:hover .dropbtn {
     background-color: grey;
 }
-a:hover {
-	background-color:white; 
-	color: black; 
-	height:7vh; 
-	width:15%; 
-	position:absolute; 
-	margin-left: 43vw;
-	margin-top:35%;
-	z-index: 60; 
-	text-decoration: none; 
-	text-align: center; 
-	font-size: 17px; 
-	padding-top:15px;
-	}
 </style>
+	
+<script>                                                
+    function changebutton() {
+      document.getElementByID('explore').style.background-color = "white";
+      document.getElementByID('explore').style.color = "black";
+      document.getElementByID('explore').style.border = "none";
+    }                                                      
+    function changebuttonback(){
+      document.getElementByID('explore').style.background-color = "transparent;
+      document.getElementByID('explore').style.color = "white";
+      document.getElementByID('explore').style.border-style = "solid";
+      document.getElementByID('explore').style.border-color = "white";
+    }
+  </script> 
+	
 <body>
 
 <!-- Sidebar (hidden by default) -->
@@ -89,7 +90,8 @@ a:hover {
 <a href= "https://halongpbn.github.io/gwc-project-final/Locations/locations.html"
    style="height:7vh; width:15%; position:absolute; margin-left: 43vw; margin-top:35%;z-index: 60;
     background-color:transparent; color: white; text-decoration: none; text-align: center; font-size: 17px; padding-top:15px; border-style: solid;
-    border-color: white;" id="explore"> EXPLORE</a>
+    border-color: white;"
+   onmouseover="changebutton(this)" onmouseout="changebuttonback(this)"> EXPLORE</a>
 </div>	
 	
 
