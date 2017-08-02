@@ -51,6 +51,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', sans-serif;}
  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 <body>
+
     
 <!-- Sidebar (hidden by default) -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar" onclick="this.style.display='none'">
@@ -60,7 +61,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', sans-serif;}
   
 <!-- Top menu -->
 <div class="w3-top">
-    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()" style="style=margin:15px 15px 0px 0px;font-size:30px">☰</a>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()" style="style=margin:15px 15px 0px 0px;font-size:30px" id="nav">☰</a>
     <a href="https://halongpbn.github.io/gwc-project-final/home.html">
       <img src="artistreet.png" style="height: 70px; padding-left:460px"/>
      </a>
@@ -68,7 +69,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', sans-serif;}
 </div>
   
 <!-- GRID OF LOCATIONS -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:80px">
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:80px"">
   <div class="w3-container w3-padding-" id="projects" style="padding:15px">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-">Locations</h3>
   </div>
@@ -248,16 +249,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', sans-serif;}
 <script>
 // Script to open and close sidebar
 function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("mySidebar").style.display = "block";                                                          
 }
-$(document).ready(function(){
-    $("body").click(function(){
-        w3_close;
-    });
-});
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
-}
+} 
+</script>
+ <script>
+$(document).ready(function(){
+    $("body").not(#nav).click(function(){
+        w3_close();
+    });
+});
 </script>
 
 </body>
