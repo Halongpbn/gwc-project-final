@@ -243,34 +243,85 @@ body {font-family: "Raleway", Arial, sans-serif}
         ]
     }
 ]
+          
         });
+        var icon = {
+          url: "octopusc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon2 = {
+          url: "houstonc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon3 = {
+          url: "colorsc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon4 = {
+          url: "slashc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon5 = {
+          url: "butterc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon6 = {
+          url: "zipperc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon7 = {
+          url: "butterflyc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+          
          var marker = new google.maps.Marker({
           position: octopus_hair,
-          map: map
+          map: map,
+          icon:icon,
         });
          var marker = new google.maps.Marker({
           position: inspired,
-          map: map
+          map: map,
+          icon:icon2,
         });
          var marker = new google.maps.Marker({
           position: vertical_paint,
-          map: map
+          map: map,
+          icon:icon3,
         });
          var marker = new google.maps.Marker({
           position: queen_paint,
-          map: map
+          map: map,
+          icon:icon4,
         });
          var marker = new google.maps.Marker({
           position: butter,
-          map: map
+          map: map,
+          icon:icon5,
         });
          var marker = new google.maps.Marker({
           position: purple_zipper,
           map: map
+          icon:icon6,
         });
          var marker = new google.maps.Marker({
           position: butterfly,
-          map: map
+          map: map,
+          icon:icon7,
         });
       }
     </script>
