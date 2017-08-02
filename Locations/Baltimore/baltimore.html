@@ -240,26 +240,63 @@ body {font-family: "Raleway", Arial, sans-serif}
         ]
     }
 ]
+          
         });
+        var icon = {
+          url: "robotc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon2 = {
+          url: "flowersc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon3 = {
+          url: "lovec.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon4 = {
+          url: "cuffsc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+        var icon5 = {
+          url: "brownc.png", // url
+           scaledSize: new google.maps.Size(50, 54), // scaled size
+           origin: new google.maps.Point(0,0), // origin
+           anchor: new google.maps.Point(0, 0) // anchor
+        };
+          
         var marker = new google.maps.Marker({
           position: robot,
-          map: map
+          map: map,
+          icon:icon,
         });
         var marker = new google.maps.Marker({
           position: shawnee,
-          map: map
+          map: map,
+          icon:icon2,
         });
           var marker = new google.maps.Marker({
           position: love,
-          map: map
+          map: map,
+          icon:icon3,
         });
           var marker = new google.maps.Marker({
           position: handcuff,
           map: map
+          icon:icon4
         });
           var marker = new google.maps.Marker({
           position: justin,
           map: map
+          icon:icon5
         });
       }
     </script>
